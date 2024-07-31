@@ -1,0 +1,52 @@
+# User Documentation
+
+
+1. Overview and Purpose of the Project:
+
+Project Overview:
+    I developed a weather forecasting web application.
+    The application utilizes 2 APIs, namely OpenWeatherMap and Weatherbit, to retrieve real-time weather information.
+    Users are provided with an option within the app to choose their preferred weather data provider.
+
+Project Purpose:
+    This project aims to provide users with the flexibility to choose between multiple weather data providers and easily access real-time weather information.
+    The design prioritizes user-friendliness and intuitiveness for seamless interaction.
+
+
+2. Installation Procedure:
+
+    Step1: Move into the project directory.
+            cd semester_project
+
+    Step2: Build the Project with Maven.
+            mvn clean install
+
+    Step3: Run the Application.
+            java -jar target\test-jar-with-dependencies.jar
+
+
+3. Usage Guide:
+
+    Step1: Enter desired city name and country code.
+            e.g. city name: prague  country code: cz
+
+    Step2: Select Weather API, OpenWeatherMap or WeatherBit
+
+    Step3: Press the Search button displays weather information.
+           As a result, these values are displayed.
+            e.g.    City Name: prague
+                    Weather Description: broken clouds
+                    Tempreture: 8.07 ℃
+                    Humidity: 85.0 %
+                    Wind Speed: 4.63 m/s
+
+    Step4: If you get an error message, modify your input accordingly.
+            e.g.
+            "Invalid city name. Please enter valid city and country code."
+            -> The city name you entered is incorrect. Please re-enter the correct city name.
+
+            "Invalid country code. Please enter valid city and country code."
+            -> The country code you entered is incorrect. Please re-enter the correct country code.
+
+            "An error occurred during the API request."
+            -> An error has occurred in the API request. Please double-check that the combination of city name and country code is correct.
